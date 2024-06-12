@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins';
+    background-color: #19222b;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none!important;
+
+}
+ul,
+li {
+    list-style: none;
+}
+
+.primary {
+    color: #b1b493;
+}
+
+.fade {
+    opacity: 1 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #b1b493;
+}
+
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 0 20px;
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.card .percent {
+    position: relative;
+}
+
+.card svg {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    transform: rotate(-90deg);
+}
+
+.card svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.card svg circle:last-of-type {
+    stroke-dasharray: 625px;
+    stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+    stroke: #3498db;
+}
+
+.card .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .number h3 {
+    font-weight: 200;
+    font-size: 3.5rem;
+}
+
+.card .number h3 span {
+    font-size: 2rem;
+}
+
+.card .title h2 {
+    margin: 25px 0 0;
+}
+
+.card:nth-child(1) svg circle:last-of-type {
+    stroke: #bb9d7b;
+}
+
+.card:nth-child(2) svg circle:last-of-type {
+    stroke: #2ecc71;
+}
+
+#changingText {
+    color: #fff;
+    border-right: 1px solid black;
+    animation: cursoranim 1s linear infinite;
+}
+@keyframes cursoranim {
+    50% {
+        border-right: 1px solid rgba(0, 0, 0, 0);
+    }
+}
+.d-flex .card::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: rgb(212, 206, 192);
+    left: 0px;
+    top: 0;
+    transition: 0.8s;
+    z-index: -1;
+
+}
+.card{
+    transition: 1s;
+}
+.resume-skill span {
+    position: relative;
+    z-index: 1;
+}
+.card:hover {
+    color: #bb9d7b;
+}
+
+.card-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+}
+/* cursor  js start */
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #bb9d7b;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transform: translate(calc(-50% + 15px), -50%);
+  }
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #bb9d7b;
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+  }
+  .hover {
+    background-color:#bb9d7b;
+    opacity: 0.5;
+  }
+  .cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+  }
+  /* cursor js end */
+

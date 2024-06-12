@@ -1,0 +1,53 @@
+body {
+    width: 100%;
+   
+    font-family: 'Inter';
+    background: linear-gradient(168deg, rgba(20,1,25,1) 0%, rgba(91,14,78,1) 100%);
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+   
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+}
+.banner-content span{
+    color: transparent;
+background-image: linear-gradient(106deg, rgba(253,116,82,1) 0%, rgba(255,66,101,1) 100%);
+background-clip: text;
+}
+.banner-content .btn{
+    background:linear-gradient(106deg, rgba(253,116,82,1) 0%, rgba(255,66,101,1) 100%);
+}
+.expert{
+    position: relative;
+}
+.expert::after{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 50%;
+    background: linear-gradient(106deg, rgba(253,116,82,1) 0%, rgba(255,66,101,1) 100%);
+    top: 20px;
+    left: -20px;
+}
+.img3{
+    top: 10%;
+    left: 20%;
+    bottom: 0;
+}
+.img2{
+    top: 18%;
+    right: 30%;
+}
+.img5{
+    bottom: 12%;
+    left: 24%;
+   
+}
+.img4{
+    top: 40%;
+    left: 24%;
+}

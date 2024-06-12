@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-width: 1320px!important;
+    margin: 0 auto;
+}
+body{
+    color: #fff;
+    font-family: 'Poppins';
+    background-color: #0c0324;
+    
+ 
+}
+ .main-header{
+    background-image: url(../img/bg-hero-home.png);
+    background-color:#0c0324;
+    background-position: 0 -80px;
+    background-size: 100% auto;
+   
+}
+.banner{
+    background-image: url(../img/bg-hero-home.png);
+    background-color:#0c0324;
+    background-position: 0 -80px;
+    background-size: 100% auto;
+} 
+a{
+    text-decoration: none;
+    color: #9e9aa7;
+}
+a:hover{
+    color: rgba(250, 235, 215, 0.395);
+}
+ul, li{
+    list-style: none;
+    padding: 0;
+}
+.text-grey{
+    color: #9e9aa7;
+}
+.text-yellow{
+    color: #fead10;
+}
+.menu ul li a:hover{
+    color: #ab17df!important;
+    transition: 1s
+}
+
+.modal-backdrop.show {
+    opacity: 0; 
+}
+.menu ul li:last-child button{
+    width: 160px;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--Rajdhani);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.menu ul li:last-child button:hover{
+    transform: translateY(-15%);
+    
+}
+.menu ul li:last-child button a:hover{
+    color: #9e9aa7!important;
+}
+.banner-content button{
+    width: 160px;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--Rajdhani);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all .5s;
+    cursor: pointer;
+   
+}
+.banner-content button:hover{
+    transform: translateY(-20%);
+}
+.creativity{
+    background-image: url(../img/bg-boxstar.png);
+    background-color:#0c0324;
+    background-repeat:repeat;
+    padding: 125px 0 150px 0;
+}
+.project-2{
+    background-image: url(../img/project-2.jpg);
+    background-color:#0c0324;
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding: 125px 0 150px 0;
+
+}
+.project-1{
+    background-image: url(../img/project-1.jpg);
+    background-color:#0c0324;
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding: 125px 0 150px 0;
+
+}
+.project-1 button:hover{
+    background-color: #fff!important;
+    color: #000!important;
+}
+.project-2 button:hover{
+    background-color: #fff!important;
+    color: #000!important;
+}
+.official{
+    background: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+}
+.official .star-img img{
+    left: -8%;
+  
+}
+.official .star-img-01 img{
+    left: -8%;
+}
+.official .star-img-02  img{
+    left: -8%;
+  
+}
+.price-header{
+    font-size: 70px;
+    line-height: 80px;
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    font-weight: 900;
+    color:#1d1533;
+    z-index: -1;
+  
+}
+
+.client-01::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background:gray;
+    top: 16%;
+    left: calc(50% - 30px);
+}
+.crative::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background:gray;
+    top: 25%;
+    left: calc(50% - 30px);
+}
+.client-02::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background:gray;
+    top: 30%;
+    left: calc(50% - 30px);
+}
+.intrested button{
+ width: 160px;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+   
+}
+.intrested button:hover{
+    transform: translateY(-15%);
+}
+.official{
+    position: relative!important;
+}
+.star-row{
+    position: relative!important;
+}
